@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>39A 早午餐餐廳</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0e0e0; /* 淺灰色背景 */
+            color: #000; /* 文字黑色 */
+            margin: 0;
+            padding: 0;
+            text-align: center; /* 文字置中 */
+        }
+
+        header {
+            background-color: #fff; /* 背景白色 */
+            color: #000; /* 文字黑色 */
+            padding: 20px;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            background-color: #000; /* 黑色圓形 */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+
+        .logo h1 {
+            color: #fff; /* 圓形內文字白色 */
+            font-size: 48px;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #000; /* 黑色連結文字 */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #fff; /* 白色區塊 */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #000; /* 標題黑色 */
+        }
+
+        .menu-item {
+            margin-bottom: 20px;
+        }
+
+        .menu-item img {
+            width: 400px;
+            height: 360px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .menu-item h3 {
+            margin: 5px 0;
+            font-size: 20px; /* 標題字體大小調整為20px */
+        }
+
+        .menu-item p {
+            font-size: 14px; /* 內容文字大小調整為14px */
+            margin: 5px 0;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f9f9f9;
+            color: #000;
+            margin-top: 40px;
+        }
+
+        /* 修改列表的黑點為黑色星星 */
+        #rules ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /* 將整個列表內容置中 */
+}
+
+#rules ul li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#rules ul li::before {
+    content: "★"; /* 黑色星星符號 */
+    color: black; /* 星星顏色設定為黑色 */
+    margin-right: 10
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>39A</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#menu">菜單介紹</a></li>
+                <li><a href="#hours">營業時間</a></li>
+                <li><a href="#rules">店內規則</a></li>
+                <li><a href="#social">粉專資訊</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h2>菜單介紹</h2>
+
+        <div class="menu-item">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462555014_1438400803519531_3586055433624917925_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=65LvuMoU6TYQ7kNvgFdOpyp&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&_nc_gid=AprfxJV1Jqe-EhLJubS6qYP&oh=03_Q7cD1QHu2aDa6QX6TcYR4wfa-vUW1Rec4YNbctjfRVdEZZzwUw&oe=672C40AC" alt="39A 經典餐盤">
+            <h3>39A 經典餐盤 - $390</h3>
+            <p>手工肉腸、煙燻火腿、煎雙蛋、奶油蘑菇、炸馬鈴薯角、丹麥捲</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462308764_561223483236787_2755630981275786555_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=IlZ6IT3mk_IQ7kNvgGobpK9&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&_nc_gid=AILOGHVrVSY_kDkq4AJM1wR&oh=03_Q7cD1QGc7xQCrOr9c6Cr56NeKU0NJ_L39XoIxQ5C7LmeLdApdA&oe=672C66C7" alt="鮭魚酪梨水波蛋可頌">
+            <h3>鮭魚酪梨水波蛋可頌 - $370</h3>
+            <p>鮭魚、鮭魚卵、酪梨醬、可頌、水波蛋、芝麻葉</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462544702_535447262509139_5982949459550786300_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=Rwa8Dl8pDlsQ7kNvgGK72BP&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&_nc_gid=AeXHrECLLBDpsQR0HVzf3kX&oh=03_Q7cD1QFhEwR_BhqZLxraZQtIo3Gzdt8akeHOL56z2_upPDl4Zw&oe=672C3C63" alt="MOJO手撕豬漢堡">
+            <h3>MOJO手撕豬漢堡 - $370</h3>
+            <p>慢敦手撕豬、酪梨醬、漬菜、炸洋蔥、甜菜根、布里歐許</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462541477_1237810533927663_5591881359395117405_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_ohc=omT31EMxkvUQ7kNvgEqPCLd&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&_nc_gid=AjkQqkueWZU7q6f0FEjru5f&oh=03_Q7cD1QF_H9zzfDBJaxwnL71DS7VlpCMibfarnsunJvtMzRraHA&oe=672C3E04" alt="摩洛哥香料海鮮巧達碗">
+            <h3>摩洛哥香料海鮮巧達碗 - $380</h3>
+            <p>鮮魚、鮮蝦、透抽、蛤蜊、馬鈴薯、佛卡夏</p>
+        </div>
+
+        
+    </section>
+
+    <section id="hours">
+        <h2>營業時間</h2>
+        <p>週三至週日- 11:00 - 17:00 </p>
+        <p>最後供餐-依當日狀況 售完打烊</p>
+    </section>
+
+    <section id="rules">
+        <h2>店內規則</h2>
+        <ul>
+            <li>每桌限時 120 分鐘</li>
+            <li>請勿攜帶外食</li>
+            <li>低消金額 300/人</li>
+            <li>目前僅提供現金服務</li>
+        </ul>
+    </section>
+
+    <section id="social">
+        <h2>粉專資訊</h2>
+        <p>關注我們的 <a href="https://www.instagram.com/39a_2014/" target="_blank">Instagram</a>，獲得最新優惠與消息！</p>
+    </section>
+
+    
+
+    <footer>
+        <p>&copy; 2024 39A 早午餐餐廳</p>
+    </footer>
+</body>
+</html>
